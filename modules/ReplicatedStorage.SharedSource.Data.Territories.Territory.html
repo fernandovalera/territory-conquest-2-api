@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Functions">Functions</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="nowrap">                          
+      <li><a href="../modules/ReplicatedStorage.LocalSource.Publishers.ClientRequestSender.html">ReplicatedStorage.LocalSource.Publishers.ClientRequestSender</a></li>    
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Armies.Army.html">ReplicatedStorage.SharedSource.Data.Armies.Army</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Battle.html">ReplicatedStorage.SharedSource.Data.Battle</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Cities.City.html">ReplicatedStorage.SharedSource.Data.Cities.City</a></li>   
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.GameTeam.html">ReplicatedStorage.SharedSource.Data.GameTeam</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Generals.General.html">ReplicatedStorage.SharedSource.Data.Generals.General</a></li>  
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Library.GameObject.html">ReplicatedStorage.SharedSource.Data.Library.GameObject</a></li>   
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Structures.Structure.html">ReplicatedStorage.SharedSource.Data.Structures.Structure</a></li> 
+      <li><strong>ReplicatedStorage.SharedSource.Data.Territories.Territory</strong></li>                     
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Module <code>ReplicatedStorage.SharedSource.Data.Territories.Territory</code></h1> 
+     <p>Base class for all Territory types.</p> 
+     <p></p> 
+     <h3>See also:</h3> 
+     <ul> 
+      <a href="../modules/ReplicatedStorage.SharedSource.Data.Library.GameObject.html#">ReplicatedStorage.SharedSource.Data.Library.GameObject</a> 
+     </ul> 
+     <h2><a href="#Functions">Functions</a></h2> 
+     <table class="function_list"> 
+      <tbody>  
+       <tr> 
+        <td class="name" nowrap><a href="#getTerritoriesForState">getTerritoriesForState (state_name)</a></td> 
+        <td class="summary">Class method: Get territories of a particular state</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getAllStates">getAllStates ()</a></td> 
+        <td class="summary">Class method: Get all states</td> 
+       </tr>              
+       <tr> 
+        <td class="name" nowrap><a href="#getAdjacentTerritoryIds">getAdjacentTerritoryIds ()</a></td> 
+        <td class="summary">Gets adjacent node ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getArmyIds">getArmyIds ()</a></td> 
+        <td class="summary">Gets a list army ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getArmySize">getArmySize ()</a></td> 
+        <td class="summary">Gets total army size.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getBattleId">getBattleId ()</a></td> 
+        <td class="summary">Gets battle id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getCityIds">getCityIds ()</a></td> 
+        <td class="summary">Gets a list of the territory's city ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getHeight">getHeight ()</a></td> 
+        <td class="summary">Gets the height.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getStateName">getStateName ()</a></td> 
+        <td class="summary">Gets the state name.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getStructureIds">getStructureIds ()</a></td> 
+        <td class="summary">Gets a list of structure ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getTerritoryName">getTerritoryName ()</a></td> 
+        <td class="summary">Gets the territory's name.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getRuralPopulation">getRuralPopulation ()</a></td> 
+        <td class="summary">Gets the population of rural areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getSurfacePosition">getSurfacePosition ()</a></td> 
+        <td class="summary">Gets the surface position.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getTotalPopulation">getTotalPopulation ()</a></td> 
+        <td class="summary">Gets the population of rural and urban areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getUrbanPopulation">getUrbanPopulation ()</a></td> 
+        <td class="summary">Gets the population of urban areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#isInBattle">isInBattle ()</a></td> 
+        <td class="summary">Returns true if in battle.</td> 
+       </tr>    
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2 class="section-header "><a name="Functions"></a>Functions</h2> 
+     <dl class="function">     
+      <dt> 
+       <a name="getTerritoriesForState"></a> 
+       <strong>getTerritoriesForState (state_name)</strong> 
+      </dt> 
+      <dd>
+        Class method: Get territories of a particular state 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">state_name</span> String name </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="getAllStates"></a> 
+       <strong>getAllStates ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all states 
+      </dd>                           
+      <dt> 
+       <a name="getAdjacentTerritoryIds"></a> 
+       <strong>getAdjacentTerritoryIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets adjacent node ids. 
+      </dd> 
+      <dt> 
+       <a name="getArmyIds"></a> 
+       <strong>getArmyIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list army ids. 
+      </dd> 
+      <dt> 
+       <a name="getArmySize"></a> 
+       <strong>getArmySize ()</strong> 
+      </dt> 
+      <dd>
+        Gets total army size. 
+      </dd> 
+      <dt> 
+       <a name="getBattleId"></a> 
+       <strong>getBattleId ()</strong> 
+      </dt> 
+      <dd>
+        Gets battle id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if not in battle, or a battle id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getCityIds"></a> 
+       <strong>getCityIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of the territory's city ids. 
+      </dd> 
+      <dt> 
+       <a name="getHeight"></a> 
+       <strong>getHeight ()</strong> 
+      </dt> 
+      <dd>
+        Gets the height. 
+      </dd> 
+      <dt> 
+       <a name="getStateName"></a> 
+       <strong>getStateName ()</strong> 
+      </dt> 
+      <dd>
+        Gets the state name. 
+      </dd> 
+      <dt> 
+       <a name="getStructureIds"></a> 
+       <strong>getStructureIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of structure ids. 
+      </dd> 
+      <dt> 
+       <a name="getTerritoryName"></a> 
+       <strong>getTerritoryName ()</strong> 
+      </dt> 
+      <dd>
+        Gets the territory's name. 
+      </dd> 
+      <dt> 
+       <a name="getRuralPopulation"></a> 
+       <strong>getRuralPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of rural areas. 
+      </dd> 
+      <dt> 
+       <a name="getSurfacePosition"></a> 
+       <strong>getSurfacePosition ()</strong> 
+      </dt> 
+      <dd>
+        Gets the surface position. 
+      </dd> 
+      <dt> 
+       <a name="getTotalPopulation"></a> 
+       <strong>getTotalPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of rural and urban areas. 
+      </dd> 
+      <dt> 
+       <a name="getUrbanPopulation"></a> 
+       <strong>getUrbanPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of urban areas. 
+      </dd> 
+      <dt> 
+       <a name="isInBattle"></a> 
+       <strong>isInBattle ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if in battle. 
+      </dd>       
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i> 
+    <i style="float:right;">Last updated 2019-11-19 21:35:57 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

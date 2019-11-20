@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Functions">Functions</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="nowrap">                          
+      <li><a href="../modules/ReplicatedStorage.LocalSource.Publishers.ClientRequestSender.html">ReplicatedStorage.LocalSource.Publishers.ClientRequestSender</a></li>    
+      <li><strong>ReplicatedStorage.SharedSource.Data.Armies.Army</strong></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Battle.html">ReplicatedStorage.SharedSource.Data.Battle</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Cities.City.html">ReplicatedStorage.SharedSource.Data.Cities.City</a></li>   
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.GameTeam.html">ReplicatedStorage.SharedSource.Data.GameTeam</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Generals.General.html">ReplicatedStorage.SharedSource.Data.Generals.General</a></li>  
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Library.GameObject.html">ReplicatedStorage.SharedSource.Data.Library.GameObject</a></li>   
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Structures.Structure.html">ReplicatedStorage.SharedSource.Data.Structures.Structure</a></li> 
+      <li><a href="../modules/ReplicatedStorage.SharedSource.Data.Territories.Territory.html">ReplicatedStorage.SharedSource.Data.Territories.Territory</a></li>                     
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Module <code>ReplicatedStorage.SharedSource.Data.Armies.Army</code></h1> 
+     <p>Base class for Army types.</p> 
+     <p></p> 
+     <h3>See also:</h3> 
+     <ul> 
+      <a href="../modules/ReplicatedStorage.SharedSource.Data.Library.GameObject.html#">ReplicatedStorage.SharedSource.Data.Library.GameObject</a> 
+     </ul> 
+     <h2><a href="#Functions">Functions</a></h2> 
+     <table class="function_list"> 
+      <tbody>    
+       <tr> 
+        <td class="name" nowrap><a href="#getSize">getSize ()</a></td> 
+        <td class="summary">Gets the size.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getSpeed">getSpeed ()</a></td> 
+        <td class="summary">Gets the speed.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getCurrentTerritoryId">getCurrentTerritoryId ()</a></td> 
+        <td class="summary">Gets the current node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getLastTerritoryId">getLastTerritoryId ()</a></td> 
+        <td class="summary">Gets the last node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getNextTerritoryId">getNextTerritoryId ()</a></td> 
+        <td class="summary">Gets the next node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getTargetTerritoryId">getTargetTerritoryId ()</a></td> 
+        <td class="summary">Gets the target node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getBattleId">getBattleId ()</a></td> 
+        <td class="summary">Gets the army's battle id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getMoveVector">getMoveVector ()</a></td> 
+        <td class="summary">Gets the move vector.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getDistanceToNextTerritory">getDistanceToNextTerritory ()</a></td> 
+        <td class="summary">Gets the distance to the next territory.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getPath">getPath ()</a></td> 
+        <td class="summary">Gets the path.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#getType">getType ()</a></td> 
+        <td class="summary">Gets the type.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#isInBattle">isInBattle ()</a></td> 
+        <td class="summary">Returns true if in battle.</td> 
+       </tr>         
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2 class="section-header "><a name="Functions"></a>Functions</h2> 
+     <dl class="function">         
+      <dt> 
+       <a name="getSize"></a> 
+       <strong>getSize ()</strong> 
+      </dt> 
+      <dd>
+        Gets the size. 
+      </dd> 
+      <dt> 
+       <a name="getSpeed"></a> 
+       <strong>getSpeed ()</strong> 
+      </dt> 
+      <dd>
+        Gets the speed. 
+      </dd> 
+      <dt> 
+       <a name="getCurrentTerritoryId"></a> 
+       <strong>getCurrentTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the current node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is moving, or the current node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getLastTerritoryId"></a> 
+       <strong>getLastTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the last node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not moving, or the last node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getNextTerritoryId"></a> 
+       <strong>getNextTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the next node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not moving, or the next node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getTargetTerritoryId"></a> 
+       <strong>getTargetTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the target node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army has no target, or the target node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getBattleId"></a> 
+       <strong>getBattleId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the army's battle id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not in battle, or a battle id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="getMoveVector"></a> 
+       <strong>getMoveVector ()</strong> 
+      </dt> 
+      <dd>
+        Gets the move vector. 
+      </dd> 
+      <dt> 
+       <a name="getDistanceToNextTerritory"></a> 
+       <strong>getDistanceToNextTerritory ()</strong> 
+      </dt> 
+      <dd>
+        Gets the distance to the next territory. 
+      </dd> 
+      <dt> 
+       <a name="getPath"></a> 
+       <strong>getPath ()</strong> 
+      </dt> 
+      <dd>
+        Gets the path. 
+      </dd> 
+      <dt> 
+       <a name="getType"></a> 
+       <strong>getType ()</strong> 
+      </dt> 
+      <dd>
+        Gets the type. 
+      </dd> 
+      <dt> 
+       <a name="isInBattle"></a> 
+       <strong>isInBattle ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if in battle. 
+      </dd>                 
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i> 
+    <i style="float:right;">Last updated 2019-11-19 21:35:57 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>
