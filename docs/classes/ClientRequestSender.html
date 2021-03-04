@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><strong>ClientRequestSender</strong></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>ClientRequestSender</code></h1> 
+     <p>For client-to-server communication.</p> 
+     <p> </p>
+     <p> Contains all actions that can be sent to the server.</p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:requestGameData">ClientRequestSender:requestGameData ()</a></td> 
+        <td class="summary">Requests a total refresh of game data and state</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:cancelArmyOrder">ClientRequestSender:cancelArmyOrder (army_id_list)</a></td> 
+        <td class="summary">Cancel a list of army orders.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:disbandArmy">ClientRequestSender:disbandArmy (army_id_list)</a></td> 
+        <td class="summary">Disband a list of armies.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:exchangeArmies">ClientRequestSender:exchangeArmies (army_from_id, general_ids, units, army_to_id)</a></td> 
+        <td class="summary">Exchanges or splits armies.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:mergeArmies">ClientRequestSender:mergeArmies (army_id_list, target_node_id)</a></td> 
+        <td class="summary">Merges all armies specified and optionally moves armies to a target node.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:sendArmy">ClientRequestSender:sendArmy (army_id_list, target_node_id, target_type)</a></td> 
+        <td class="summary">Send Armies.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:trainArmy">ClientRequestSender:trainArmy (node_id, army_name, units)</a></td> 
+        <td class="summary">Train an army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:trainArmyRefill">ClientRequestSender:trainArmyRefill (structure_id, target_army_id, units)</a></td> 
+        <td class="summary">Train refill Armies.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:trainGeneral">ClientRequestSender:trainGeneral (node_id, army_id)</a></td> 
+        <td class="summary">Train a general on a territory.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:canTrainGeneral">ClientRequestSender:canTrainGeneral (node_id)</a></td> 
+        <td class="summary">Returns true if a general can be trained on a territory.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:buyStructure">ClientRequestSender:buyStructure (territory_id, structure_id)</a></td> 
+        <td class="summary">Buy a structure from the player's team's structure list.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:sellStructure">ClientRequestSender:sellStructure (structure_id, territory_id)</a></td> 
+        <td class="summary">Sell a structure.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:fetchStructureList">ClientRequestSender:fetchStructureList (team_id)</a></td> 
+        <td class="summary">Get structure list for team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:declareWar">ClientRequestSender:declareWar (team_id)</a></td> 
+        <td class="summary">Declare war with another team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:endWar">ClientRequestSender:endWar (team_id)</a></td> 
+        <td class="summary">Attempt to broker a peace with another team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:requestAlliance">ClientRequestSender:requestAlliance (team_id, minimum_duration)</a></td> 
+        <td class="summary">Send an ally request to another team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:breakAlliance">ClientRequestSender:breakAlliance (team_id)</a></td> 
+        <td class="summary">Break an alliance with another team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:openBorders">ClientRequestSender:openBorders (team_ids)</a></td> 
+        <td class="summary">Open borders with a list of teams.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:closeBorders">ClientRequestSender:closeBorders (team_ids)</a></td> 
+        <td class="summary">Close borders with a list of teams.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#ClientRequestSender:voteForNextGame">ClientRequestSender:voteForNextGame (choice_idx)</a></td> 
+        <td class="summary">Vote for the next game</td> 
+       </tr> 
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function"> 
+      <dt> 
+       <a name="ClientRequestSender:requestGameData"></a> 
+       <strong>ClientRequestSender:requestGameData ()</strong> 
+      </dt> 
+      <dd>
+        Requests a total refresh of game data and state 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:cancelArmyOrder"></a> 
+       <strong>ClientRequestSender:cancelArmyOrder (army_id_list)</strong> 
+      </dt> 
+      <dd>
+        Cancel a list of army orders. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id_list</span> list of Army ids </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:disbandArmy"></a> 
+       <strong>ClientRequestSender:disbandArmy (army_id_list)</strong> 
+      </dt> 
+      <dd>
+        Disband a list of armies. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id_list</span> list of Army ids </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:exchangeArmies"></a> 
+       <strong>ClientRequestSender:exchangeArmies (army_from_id, general_ids, units, army_to_id)</strong> 
+      </dt> 
+      <dd>
+        Exchanges or splits armies. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_from_id</span> the army exchange units from </li> 
+        <li><span class="parameter">general_ids</span> a list of General ids </li> 
+        <li><span class="parameter">units</span> a dict where the keys are unit types and the values are the amount </li> 
+        <li><span class="parameter">army_to_id</span> (optional) army to exchange units to </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         the new army id, if this was created 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:mergeArmies"></a> 
+       <strong>ClientRequestSender:mergeArmies (army_id_list, target_node_id)</strong> 
+      </dt> 
+      <dd>
+        Merges all armies specified and optionally moves armies to a target node. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id_list</span> list of Army ids to merge </li> 
+        <li><span class="parameter">target_node_id</span> (optional) node id to merge armies on </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:sendArmy"></a> 
+       <strong>ClientRequestSender:sendArmy (army_id_list, target_node_id, target_type)</strong> 
+      </dt> 
+      <dd>
+        Send Armies. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id_list</span> a list of Army ids </li> 
+        <li><span class="parameter">target_node_id</span> the target Node id </li> 
+        <li><span class="parameter">target_type</span> 'node' or 'army' </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:trainArmy"></a> 
+       <strong>ClientRequestSender:trainArmy (node_id, army_name, units)</strong> 
+      </dt> 
+      <dd>
+        Train an army. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">node_id</span> id of the Territory to train the army </li> 
+        <li><span class="parameter">army_name</span> the desired name for the army </li> 
+        <li><span class="parameter">units</span> the desired unit composition of the army </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:trainArmyRefill"></a> 
+       <strong>ClientRequestSender:trainArmyRefill (structure_id, target_army_id, units)</strong> 
+      </dt> 
+      <dd>
+        Train refill Armies. Must be sent to an allied army 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">structure_id</span> structure to use to produce units </li> 
+        <li><span class="parameter">target_army_id</span> id of target army to refill </li> 
+        <li><span class="parameter">units</span> units to produce </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:trainGeneral"></a> 
+       <strong>ClientRequestSender:trainGeneral (node_id, army_id)</strong> 
+      </dt> 
+      <dd>
+        Train a general on a territory. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">node_id</span> id of the Territory </li> 
+        <li><span class="parameter">army_id</span> (optional) id of the Army to attach the general to </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:canTrainGeneral"></a> 
+       <strong>ClientRequestSender:canTrainGeneral (node_id)</strong> 
+      </dt> 
+      <dd>
+        Returns true if a general can be trained on a territory. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">node_id</span> id of the Territory </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:buyStructure"></a> 
+       <strong>ClientRequestSender:buyStructure (territory_id, structure_id)</strong> 
+      </dt> 
+      <dd>
+        Buy a structure from the player's team's structure list. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">territory_id</span> id of the Territory to build the structure on </li> 
+        <li><span class="parameter">structure_id</span> id of the Structure to build from team structure list </li> 
+       </ul> 
+       <h3>See also:</h3> 
+       <ul> 
+        <a href="../classes/ClientRequestSender.html#ClientRequestSender:fetchStructureList">ClientRequestSender:fetchStructureList</a> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:sellStructure"></a> 
+       <strong>ClientRequestSender:sellStructure (structure_id, territory_id)</strong> 
+      </dt> 
+      <dd>
+        Sell a structure. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">structure_id</span> id of the Structure to sell </li> 
+        <li><span class="parameter">territory_id</span> id of the Territory that the structure should be on </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:fetchStructureList"></a> 
+       <strong>ClientRequestSender:fetchStructureList (team_id)</strong> 
+      </dt> 
+      <dd>
+        Get structure list for team. Can return empty if team was invalid. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> id of the Team to fetch a structure list for </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:declareWar"></a> 
+       <strong>ClientRequestSender:declareWar (team_id)</strong> 
+      </dt> 
+      <dd>
+        Declare war with another team. No confirmation required. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> the id of the Team to affect </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:endWar"></a> 
+       <strong>ClientRequestSender:endWar (team_id)</strong> 
+      </dt> 
+      <dd>
+        Attempt to broker a peace with another team. The other team will be notified and must agree for the war to end. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> the id of the Team to affect </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:requestAlliance"></a> 
+       <strong>ClientRequestSender:requestAlliance (team_id, minimum_duration)</strong> 
+      </dt> 
+      <dd>
+        Send an ally request to another team. The other team will be notified and must agree to form/join an alliance. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> the id of the Team to affect </li> 
+        <li><span class="parameter">minimum_duration</span> the minimum duration in minutes to specify the alliance for </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:breakAlliance"></a> 
+       <strong>ClientRequestSender:breakAlliance (team_id)</strong> 
+      </dt> 
+      <dd>
+        Break an alliance with another team. No confirmation required. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> the id of the Team to affect </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:openBorders"></a> 
+       <strong>ClientRequestSender:openBorders (team_ids)</strong> 
+      </dt> 
+      <dd>
+        Open borders with a list of teams. Has no effect whilst at war or allied with another team. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_ids</span> the ids of the Teams to affect </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:closeBorders"></a> 
+       <strong>ClientRequestSender:closeBorders (team_ids)</strong> 
+      </dt> 
+      <dd>
+        Close borders with a list of teams. Has no effect whilst at war or allied with another team. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_ids</span> the ids of the Teams to affect </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="ClientRequestSender:voteForNextGame"></a> 
+       <strong>ClientRequestSender:voteForNextGame (choice_idx)</strong> 
+      </dt> 
+      <dd>
+        Vote for the next game 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">choice_idx</span> id of the choice to vote for </li> 
+       </ul> 
+      </dd> 
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

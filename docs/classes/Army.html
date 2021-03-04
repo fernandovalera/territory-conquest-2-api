@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><strong>Army</strong></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>Army</code></h1> 
+     <p>Represents of group of units of any type and Generals.</p> 
+     <p> </p>
+     <p> Units: units: The composition of units present in this Army. units_order: Tracks the number of unique unit types in this Army and provides the order of units units_class_map: Tracks the class maps of which there are at least 1 unit type of </p>
+     <p> Army Details: trained_by_structure_id: A marker for whether this Army is currently being trained. Logic can be built around whether this this army can move if it is being trained. </p>
+     <p> desired_units: The desired composition of units. Can allow progress to be shown or for Armies to be replenished by these. </p>
+     <p> desired_units_order: Tracks the number of unique types in this Army and provides the order of desired units </p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>               
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getFollowerIds">Army:getFollowerIds ()</a></td> 
+        <td class="summary">Gets ids of all armies following this army.</td> 
+       </tr>   
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getIncomingArmyIds">Army:getIncomingArmyIds ()</a></td> 
+        <td class="summary">Returns ids of all armies that are en-route to merge with this army.</td> 
+       </tr>   
+       <tr> 
+        <td class="name" nowrap><a href="#Army:hasTrainingArmy">Army:hasTrainingArmy (army)</a></td> 
+        <td class="summary">Returns true if the input army is being trained for this army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getTrainingArmyIds">Army:getTrainingArmyIds ()</a></td> 
+        <td class="summary">Returns ids of all armies being trained for this army.</td> 
+       </tr>    
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getName">Army:getName ()</a></td> 
+        <td class="summary">Gets the Army's name.</td> 
+       </tr>  
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getSize">Army:getSize (unit_type)</a></td> 
+        <td class="summary">Gets the size of units.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getDesiredSize">Army:getDesiredSize (unit_type)</a></td> 
+        <td class="summary">Gets the size of desired units.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getSpeed">Army:getSpeed ()</a></td> 
+        <td class="summary">Gets the speed.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getCurrentTerritoryId">Army:getCurrentTerritoryId ()</a></td> 
+        <td class="summary">Gets the current node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getLastTerritoryId">Army:getLastTerritoryId ()</a></td> 
+        <td class="summary">Gets the last node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getNextTerritoryId">Army:getNextTerritoryId ()</a></td> 
+        <td class="summary">Gets the next node id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getTargetId">Army:getTargetId ()</a></td> 
+        <td class="summary">Gets the target obj id</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getTargetType">Army:getTargetType ()</a></td> 
+        <td class="summary">Gets the target obj's type</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getBattleId">Army:getBattleId ()</a></td> 
+        <td class="summary">Gets the army's battle id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getGeneralIds">Army:getGeneralIds ()</a></td> 
+        <td class="summary">Gets a list of general ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getMoveVector">Army:getMoveVector ()</a></td> 
+        <td class="summary">Gets the move vector.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getDistanceToNextTerritory">Army:getDistanceToNextTerritory ()</a></td> 
+        <td class="summary">Gets the distance to the next territory.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getPath">Army:getPath ()</a></td> 
+        <td class="summary">Gets the path.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getTrainedByStructureId">Army:getTrainedByStructureId ()</a></td> 
+        <td class="summary">Gets the id of the structure training this Army (if any).</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getType">Army:getType ()</a></td> 
+        <td class="summary">Gets the type.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getUnits">Army:getUnits ()</a></td> 
+        <td class="summary">Returns the actual composition of units.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getUnitsClassMap">Army:getUnitsClassMap ()</a></td> 
+        <td class="summary">Returns a table where the keys are all the unit classes in this Army and the values are the amount.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getDesiredUnits">Army:getDesiredUnits ()</a></td> 
+        <td class="summary">Returns the desired composition of units.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getUnitTypesCount">Army:getUnitTypesCount ()</a></td> 
+        <td class="summary">Gets the number unit types.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getUnitsAtIndex">Army:getUnitsAtIndex (i)</a></td> 
+        <td class="summary">Gets the unit type and number of units at an index</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getCombatData">Army:getCombatData (combat_type, units)</a></td> 
+        <td class="summary">Gets the combat strength and devastation of an Army for a combat type (attack or defence).</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getAttackData">Army:getAttackData ()</a></td> 
+        <td class="summary">Gets the current attack combat strength of an Army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getFullAttackData">Army:getFullAttackData ()</a></td> 
+        <td class="summary">Gets the full attack combat strength of an Army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getDefenceData">Army:getDefenceData ()</a></td> 
+        <td class="summary">Gets the current defence combat strength of an Army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getFullDefenceData">Army:getFullDefenceData ()</a></td> 
+        <td class="summary">Gets the current defence combat strength of an Army.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getDominantUnitType">Army:getDominantUnitType ()</a></td> 
+        <td class="summary">Returns the dominant unit type or nil.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getSurfaceCFrame">Army:getSurfaceCFrame ()</a></td> 
+        <td class="summary">Gets the surface cframe.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:getSurfacePosition">Army:getSurfacePosition ()</a></td> 
+        <td class="summary">Gets the surface position.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:isActive">Army:isActive ()</a></td> 
+        <td class="summary">Returns true if the Army is in battle or is moving.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Army:isInBattle">Army:isInBattle ()</a></td> 
+        <td class="summary">Returns true if in battle.</td> 
+       </tr>           
+       <tr> 
+        <td class="name" nowrap><a href="#Army:isTrainingArmy">Army:isTrainingArmy ()</a></td> 
+        <td class="summary">Return true if this Army is being used for the purpose training another army</td> 
+       </tr>  
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">                               
+      <dt> 
+       <a name="Army:getFollowerIds"></a> 
+       <strong>Army:getFollowerIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets ids of all armies following this army. 
+      </dd>     
+      <dt> 
+       <a name="Army:getIncomingArmyIds"></a> 
+       <strong>Army:getIncomingArmyIds ()</strong> 
+      </dt> 
+      <dd>
+        Returns ids of all armies that are en-route to merge with this army. 
+      </dd>     
+      <dt> 
+       <a name="Army:hasTrainingArmy"></a> 
+       <strong>Army:hasTrainingArmy (army)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the input army is being trained for this army. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Army:getTrainingArmyIds"></a> 
+       <strong>Army:getTrainingArmyIds ()</strong> 
+      </dt> 
+      <dd>
+        Returns ids of all armies being trained for this army. 
+      </dd>       
+      <dt> 
+       <a name="Army:getName"></a> 
+       <strong>Army:getName ()</strong> 
+      </dt> 
+      <dd>
+        Gets the Army's name. 
+      </dd>   
+      <dt> 
+       <a name="Army:getSize"></a> 
+       <strong>Army:getSize (unit_type)</strong> 
+      </dt> 
+      <dd>
+        Gets the size of units. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">unit_type</span> (optional) the unit type of interest. Will get count of all unit types if not provided </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Army:getDesiredSize"></a> 
+       <strong>Army:getDesiredSize (unit_type)</strong> 
+      </dt> 
+      <dd>
+        Gets the size of desired units. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">unit_type</span> (optional) the unit type of interest. Will get count of all unit types if not provided </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Army:getSpeed"></a> 
+       <strong>Army:getSpeed ()</strong> 
+      </dt> 
+      <dd>
+        Gets the speed. 
+      </dd> 
+      <dt> 
+       <a name="Army:getCurrentTerritoryId"></a> 
+       <strong>Army:getCurrentTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the current node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is moving, or the current node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getLastTerritoryId"></a> 
+       <strong>Army:getLastTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the last node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not moving, or the last node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getNextTerritoryId"></a> 
+       <strong>Army:getNextTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the next node id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not moving, or the next node id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getTargetId"></a> 
+       <strong>Army:getTargetId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the target obj id 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army has no target, or the target id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getTargetType"></a> 
+       <strong>Army:getTargetType ()</strong> 
+      </dt> 
+      <dd>
+        Gets the target obj's type 
+       <h3>Returns:</h3> 
+       <ol>
+         '' if the army has no target, or the target type 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getBattleId"></a> 
+       <strong>Army:getBattleId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the army's battle id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if the army is not in battle, or a battle id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Army:getGeneralIds"></a> 
+       <strong>Army:getGeneralIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of general ids. 
+      </dd> 
+      <dt> 
+       <a name="Army:getMoveVector"></a> 
+       <strong>Army:getMoveVector ()</strong> 
+      </dt> 
+      <dd>
+        Gets the move vector. 
+      </dd> 
+      <dt> 
+       <a name="Army:getDistanceToNextTerritory"></a> 
+       <strong>Army:getDistanceToNextTerritory ()</strong> 
+      </dt> 
+      <dd>
+        Gets the distance to the next territory. 
+      </dd> 
+      <dt> 
+       <a name="Army:getPath"></a> 
+       <strong>Army:getPath ()</strong> 
+      </dt> 
+      <dd>
+        Gets the path. 
+      </dd> 
+      <dt> 
+       <a name="Army:getTrainedByStructureId"></a> 
+       <strong>Army:getTrainedByStructureId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the id of the structure training this Army (if any). 
+      </dd> 
+      <dt> 
+       <a name="Army:getType"></a> 
+       <strong>Army:getType ()</strong> 
+      </dt> 
+      <dd>
+        Gets the type. 
+      </dd> 
+      <dt> 
+       <a name="Army:getUnits"></a> 
+       <strong>Army:getUnits ()</strong> 
+      </dt> 
+      <dd>
+        Returns the actual composition of units. 
+      </dd> 
+      <dt> 
+       <a name="Army:getUnitsClassMap"></a> 
+       <strong>Army:getUnitsClassMap ()</strong> 
+      </dt> 
+      <dd>
+        Returns a table where the keys are all the unit classes in this Army and the values are the amount. 
+      </dd> 
+      <dt> 
+       <a name="Army:getDesiredUnits"></a> 
+       <strong>Army:getDesiredUnits ()</strong> 
+      </dt> 
+      <dd>
+        Returns the desired composition of units. 
+      </dd> 
+      <dt> 
+       <a name="Army:getUnitTypesCount"></a> 
+       <strong>Army:getUnitTypesCount ()</strong> 
+      </dt> 
+      <dd>
+        Gets the number unit types. 
+      </dd> 
+      <dt> 
+       <a name="Army:getUnitsAtIndex"></a> 
+       <strong>Army:getUnitsAtIndex (i)</strong> 
+      </dt> 
+      <dd>
+        Gets the unit type and number of units at an index 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">i</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Army:getCombatData"></a> 
+       <strong>Army:getCombatData (combat_type, units)</strong> 
+      </dt> 
+      <dd>
+        Gets the combat strength and devastation of an Army for a combat type (attack or defence). TODO: Determine if this should be implemented in a helper class (uses UnitDat) 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">combat_type</span> </li> 
+        <li><span class="parameter">units</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Army:getAttackData"></a> 
+       <strong>Army:getAttackData ()</strong> 
+      </dt> 
+      <dd>
+        Gets the current attack combat strength of an Army. 
+      </dd> 
+      <dt> 
+       <a name="Army:getFullAttackData"></a> 
+       <strong>Army:getFullAttackData ()</strong> 
+      </dt> 
+      <dd>
+        Gets the full attack combat strength of an Army. 
+      </dd> 
+      <dt> 
+       <a name="Army:getDefenceData"></a> 
+       <strong>Army:getDefenceData ()</strong> 
+      </dt> 
+      <dd>
+        Gets the current defence combat strength of an Army. 
+      </dd> 
+      <dt> 
+       <a name="Army:getFullDefenceData"></a> 
+       <strong>Army:getFullDefenceData ()</strong> 
+      </dt> 
+      <dd>
+        Gets the current defence combat strength of an Army. 
+      </dd> 
+      <dt> 
+       <a name="Army:getDominantUnitType"></a> 
+       <strong>Army:getDominantUnitType ()</strong> 
+      </dt> 
+      <dd>
+        Returns the dominant unit type or nil. 
+      </dd> 
+      <dt> 
+       <a name="Army:getSurfaceCFrame"></a> 
+       <strong>Army:getSurfaceCFrame ()</strong> 
+      </dt> 
+      <dd>
+        Gets the surface cframe. 
+      </dd> 
+      <dt> 
+       <a name="Army:getSurfacePosition"></a> 
+       <strong>Army:getSurfacePosition ()</strong> 
+      </dt> 
+      <dd>
+        Gets the surface position. 
+      </dd> 
+      <dt> 
+       <a name="Army:isActive"></a> 
+       <strong>Army:isActive ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if the Army is in battle or is moving. 
+      </dd> 
+      <dt> 
+       <a name="Army:isInBattle"></a> 
+       <strong>Army:isInBattle ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if in battle. 
+      </dd>                     
+      <dt> 
+       <a name="Army:isTrainingArmy"></a> 
+       <strong>Army:isTrainingArmy ()</strong> 
+      </dt> 
+      <dd>
+        Return true if this Army is being used for the purpose training another army 
+      </dd>   
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

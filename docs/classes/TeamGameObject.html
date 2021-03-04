@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><strong>TeamGameObject</strong></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>TeamGameObject</code></h1> 
+     <p>Base class for game objects that are associated with a Team</p> 
+     <p></p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>    
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getAllByTeamId">TeamGameObject:getAllByTeamId (team_id)</a></td> 
+        <td class="summary">Class method: Get all objects of this type for a particular team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getAllByTeam">TeamGameObject:getAllByTeam (team)</a></td> 
+        <td class="summary">Class method: Get all objects of this type for a particular team.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getTeam">TeamGameObject:getTeam ()</a></td> 
+        <td class="summary">Gets the GameTeam.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getTeamId">TeamGameObject:getTeamId ()</a></td> 
+        <td class="summary">Gets the GameTeam's id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getTeamColor">TeamGameObject:getTeamColor ()</a></td> 
+        <td class="summary">Gets the string team color.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#TeamGameObject:getTeamColor3">TeamGameObject:getTeamColor3 ()</a></td> 
+        <td class="summary">Gets the string team color3.</td> 
+       </tr>  
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">         
+      <dt> 
+       <a name="TeamGameObject:getAllByTeamId"></a> 
+       <strong>TeamGameObject:getAllByTeamId (team_id)</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all objects of this type for a particular team. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_id</span> </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         an array with all the objects on the team, or an empty array if none exist 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="TeamGameObject:getAllByTeam"></a> 
+       <strong>TeamGameObject:getAllByTeam (team)</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all objects of this type for a particular team. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team</span> </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         an array with all the objects on the team, or an empty array if none exist 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="TeamGameObject:getTeam"></a> 
+       <strong>TeamGameObject:getTeam ()</strong> 
+      </dt> 
+      <dd>
+        Gets the GameTeam. 
+      </dd> 
+      <dt> 
+       <a name="TeamGameObject:getTeamId"></a> 
+       <strong>TeamGameObject:getTeamId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the GameTeam's id. 
+      </dd> 
+      <dt> 
+       <a name="TeamGameObject:getTeamColor"></a> 
+       <strong>TeamGameObject:getTeamColor ()</strong> 
+      </dt> 
+      <dd>
+        Gets the string team color. Returns the neutral team color if this object has no team. 
+      </dd> 
+      <dt> 
+       <a name="TeamGameObject:getTeamColor3"></a> 
+       <strong>TeamGameObject:getTeamColor3 ()</strong> 
+      </dt> 
+      <dd>
+        Gets the string team color3. Returns the neutral team color3 if this object has no team. 
+      </dd>   
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

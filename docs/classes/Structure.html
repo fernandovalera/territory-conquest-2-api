@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><strong>Structure</strong></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>Structure</code></h1> 
+     <p>Base class for structures (buildings)</p> 
+     <p></p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>  
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getActions">Structure:getActions ()</a></td> 
+        <td class="summary">Returns the actions.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getConstructionCost">Structure:getConstructionCost ()</a></td> 
+        <td class="summary">Gets the contruction cost.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getConstructionTime">Structure:getConstructionTime ()</a></td> 
+        <td class="summary">Gets the contruction time.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getDescription">Structure:getDescription ()</a></td> 
+        <td class="summary">Gets a description of this structure</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getOperationalCost">Structure:getOperationalCost ()</a></td> 
+        <td class="summary">By default, a structure has no operational cost</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getNodeId">Structure:getNodeId ()</a></td> 
+        <td class="summary">Gets the Territory that this structure is built on</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getProgress">Structure:getProgress ()</a></td> 
+        <td class="summary">Gets the progress of this structure's construction</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getResaleFactor">Structure:getResaleFactor ()</a></td> 
+        <td class="summary">Gets the resale factor.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getLastTrainedArmyIdList">Structure:getLastTrainedArmyIdList ()</a></td> 
+        <td class="summary">Gets a list of last trained Army Ids</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getTrainingArmyIdList">Structure:getTrainingArmyIdList ()</a></td> 
+        <td class="summary">Gets a list of training Army Ids</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getType">Structure:getType ()</a></td> 
+        <td class="summary">Gets the type of this structure</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getUnitProductionCapacity">Structure:getUnitProductionCapacity ()</a></td> 
+        <td class="summary">Gets the unit production capacity for all unit classes.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getUnitProductionCapacityForClass">Structure:getUnitProductionCapacityForClass (class)</a></td> 
+        <td class="summary">Gets the unit production capacity for a unit class.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getUnitProductionDemand">Structure:getUnitProductionDemand (army_id)</a></td> 
+        <td class="summary">Gets the units remaining to be produced for an Army order.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:getUnitProductionQueueForClass">Structure:getUnitProductionQueueForClass (class)</a></td> 
+        <td class="summary">Gets the amount of units waiting to be produced for a unit class.</td> 
+       </tr>  
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:isCompleted">Structure:isCompleted ()</a></td> 
+        <td class="summary">Returns true if Structure construction is complete.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:hasUnitProductionCapacity">Structure:hasUnitProductionCapacity ()</a></td> 
+        <td class="summary">Returns true if the structure can produce at least one unit class.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:hasUnitProductionCapacityForClass">Structure:hasUnitProductionCapacityForClass (class)</a></td> 
+        <td class="summary">Returns true if the structure can produce a particular unit class.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:hasUnitProductionCapacityForClasses">Structure:hasUnitProductionCapacityForClasses (classes_map)</a></td> 
+        <td class="summary">Returns true if the structure can produce all of a group of unit classes.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:hasUnitProductionCapacityForUnit">Structure:hasUnitProductionCapacityForUnit (unit_type)</a></td> 
+        <td class="summary">Returns true if the structure can produce a particular unit type.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Structure:hasUnitProductionDemand">Structure:hasUnitProductionDemand (army_id)</a></td> 
+        <td class="summary">Returns true if the structure is or will produce units for an Army order.</td> 
+       </tr> 
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">     
+      <dt> 
+       <a name="Structure:getActions"></a> 
+       <strong>Structure:getActions ()</strong> 
+      </dt> 
+      <dd>
+        Returns the actions. 
+      </dd> 
+      <dt> 
+       <a name="Structure:getConstructionCost"></a> 
+       <strong>Structure:getConstructionCost ()</strong> 
+      </dt> 
+      <dd>
+        Gets the contruction cost. 
+      </dd> 
+      <dt> 
+       <a name="Structure:getConstructionTime"></a> 
+       <strong>Structure:getConstructionTime ()</strong> 
+      </dt> 
+      <dd>
+        Gets the contruction time. 
+      </dd> 
+      <dt> 
+       <a name="Structure:getDescription"></a> 
+       <strong>Structure:getDescription ()</strong> 
+      </dt> 
+      <dd>
+        Gets a description of this structure 
+      </dd> 
+      <dt> 
+       <a name="Structure:getOperationalCost"></a> 
+       <strong>Structure:getOperationalCost ()</strong> 
+      </dt> 
+      <dd>
+        By default, a structure has no operational cost 
+      </dd> 
+      <dt> 
+       <a name="Structure:getNodeId"></a> 
+       <strong>Structure:getNodeId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the Territory that this structure is built on 
+      </dd> 
+      <dt> 
+       <a name="Structure:getProgress"></a> 
+       <strong>Structure:getProgress ()</strong> 
+      </dt> 
+      <dd>
+        Gets the progress of this structure's construction 
+      </dd> 
+      <dt> 
+       <a name="Structure:getResaleFactor"></a> 
+       <strong>Structure:getResaleFactor ()</strong> 
+      </dt> 
+      <dd>
+        Gets the resale factor. 
+      </dd> 
+      <dt> 
+       <a name="Structure:getLastTrainedArmyIdList"></a> 
+       <strong>Structure:getLastTrainedArmyIdList ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of last trained Army Ids 
+      </dd> 
+      <dt> 
+       <a name="Structure:getTrainingArmyIdList"></a> 
+       <strong>Structure:getTrainingArmyIdList ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of training Army Ids 
+      </dd> 
+      <dt> 
+       <a name="Structure:getType"></a> 
+       <strong>Structure:getType ()</strong> 
+      </dt> 
+      <dd>
+        Gets the type of this structure 
+      </dd> 
+      <dt> 
+       <a name="Structure:getUnitProductionCapacity"></a> 
+       <strong>Structure:getUnitProductionCapacity ()</strong> 
+      </dt> 
+      <dd>
+        Gets the unit production capacity for all unit classes. 
+       <h3>Returns:</h3> 
+       <ol>
+         table of the form { [CLASS_1] = 
+        <int_1>
+         , [CLASS_2] = 
+         <int_2>
+          , ... } 
+         </int_2>
+        </int_1>
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Structure:getUnitProductionCapacityForClass"></a> 
+       <strong>Structure:getUnitProductionCapacityForClass (class)</strong> 
+      </dt> 
+      <dd>
+        Gets the unit production capacity for a unit class. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">class</span> name of the unit class </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         integer representing number of units per production tick that can be produced 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Structure:getUnitProductionDemand"></a> 
+       <strong>Structure:getUnitProductionDemand (army_id)</strong> 
+      </dt> 
+      <dd>
+        Gets the units remaining to be produced for an Army order. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id</span> id of the Army order </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         table of the form { [UNIT_NAME_1] = 
+        <int_1>
+         , [UNIT_NAME_2] = 
+         <int_2>
+          , ... } 
+         </int_2>
+        </int_1>
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Structure:getUnitProductionQueueForClass"></a> 
+       <strong>Structure:getUnitProductionQueueForClass (class)</strong> 
+      </dt> 
+      <dd>
+        Gets the amount of units waiting to be produced for a unit class. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">class</span> name of the unit class </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         integer queue size 
+       </ol> 
+      </dd>   
+      <dt> 
+       <a name="Structure:isCompleted"></a> 
+       <strong>Structure:isCompleted ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if Structure construction is complete. 
+      </dd> 
+      <dt> 
+       <a name="Structure:hasUnitProductionCapacity"></a> 
+       <strong>Structure:hasUnitProductionCapacity ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if the structure can produce at least one unit class. 
+      </dd> 
+      <dt> 
+       <a name="Structure:hasUnitProductionCapacityForClass"></a> 
+       <strong>Structure:hasUnitProductionCapacityForClass (class)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the structure can produce a particular unit class. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">class</span> name of unit class </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Structure:hasUnitProductionCapacityForClasses"></a> 
+       <strong>Structure:hasUnitProductionCapacityForClasses (classes_map)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the structure can produce all of a group of unit classes. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">classes_map</span> table map of class names { [class_1] = true, [class_2] = true, ... } </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Structure:hasUnitProductionCapacityForUnit"></a> 
+       <strong>Structure:hasUnitProductionCapacityForUnit (unit_type)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the structure can produce a particular unit type. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">unit_type</span> Unit type </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Structure:hasUnitProductionDemand"></a> 
+       <strong>Structure:hasUnitProductionDemand (army_id)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the structure is or will produce units for an Army order. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army_id</span> id of Army </li> 
+       </ul> 
+      </dd> 
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

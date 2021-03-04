@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><strong>GameObject</strong></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>GameObject</code></h1> 
+     <p>Base class for data objects that have a CFrame and publish changes to their data to GlobalGameDataChanges.</p> 
+     <p> </p>
+     <p> All GameObjects can be listened to for data changes. Events are broadcast by subclasses in their setter methods. </p>
+     <p> Instances of this class behaves differently depending on whether they are running on the server or client. Only instances on the server will publish to GlobalGameDatachanges. </p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>                      
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getCFrame">GameObject:getCFrame ()</a></td> 
+        <td class="summary">Gets the CFrame.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getPosition">GameObject:getPosition ()</a></td> 
+        <td class="summary">Gets the Vector3 position.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getPosition2D">GameObject:getPosition2D ()</a></td> 
+        <td class="summary">Gets the flattened Vector3 positon.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getDistanceTo">GameObject:getDistanceTo (game_object)</a></td> 
+        <td class="summary">Gets the distance to another game object.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getDistanceTo2D">GameObject:getDistanceTo2D (game_object)</a></td> 
+        <td class="summary">Gets the flat distance to another game object.</td> 
+       </tr>      
+       <tr> 
+        <td class="name" nowrap><a href="#GameObject:getStaleEmptyFields">GameObject:getStaleEmptyFields ()</a></td> 
+        <td class="summary">Can be overriden</td> 
+       </tr>   
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">                                             
+      <dt> 
+       <a name="GameObject:getCFrame"></a> 
+       <strong>GameObject:getCFrame ()</strong> 
+      </dt> 
+      <dd>
+        Gets the CFrame. 
+      </dd> 
+      <dt> 
+       <a name="GameObject:getPosition"></a> 
+       <strong>GameObject:getPosition ()</strong> 
+      </dt> 
+      <dd>
+        Gets the Vector3 position. 
+      </dd> 
+      <dt> 
+       <a name="GameObject:getPosition2D"></a> 
+       <strong>GameObject:getPosition2D ()</strong> 
+      </dt> 
+      <dd>
+        Gets the flattened Vector3 positon. 
+      </dd> 
+      <dt> 
+       <a name="GameObject:getDistanceTo"></a> 
+       <strong>GameObject:getDistanceTo (game_object)</strong> 
+      </dt> 
+      <dd>
+        Gets the distance to another game object. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">game_object</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="GameObject:getDistanceTo2D"></a> 
+       <strong>GameObject:getDistanceTo2D (game_object)</strong> 
+      </dt> 
+      <dd>
+        Gets the flat distance to another game object. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">game_object</span> </li> 
+       </ul> 
+      </dd>           
+      <dt> 
+       <a name="GameObject:getStaleEmptyFields"></a> 
+       <strong>GameObject:getStaleEmptyFields ()</strong> 
+      </dt> 
+      <dd>
+        Can be overriden 
+      </dd>     
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

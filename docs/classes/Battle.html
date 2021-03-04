@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><strong>Battle</strong></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>Battle</code></h1> 
+     <p>Container for battle data.</p> 
+     <p></p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getParticipantIds">Battle:getParticipantIds ()</a></td> 
+        <td class="summary">Get attackers and defenders in a single list of army ids</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getAttackingTeam">Battle:getAttackingTeam ()</a></td> 
+        <td class="summary">Gets the attacking GameTeam.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getAttackingTeamColor">Battle:getAttackingTeamColor ()</a></td> 
+        <td class="summary">Gets the attacking GameTeam's team color.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getDefendingTeam">Battle:getDefendingTeam ()</a></td> 
+        <td class="summary">Gets the defending GameTeam.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getDefendingTeamColor">Battle:getDefendingTeamColor ()</a></td> 
+        <td class="summary">Gets the defending GameTeam's team color.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getAttackers">Battle:getAttackers ()</a></td> 
+        <td class="summary">Gets a list attacker army ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getDefenders">Battle:getDefenders ()</a></td> 
+        <td class="summary">Gets a list defender army ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:hasAttacker">Battle:hasAttacker (army)</a></td> 
+        <td class="summary">Returns true if the army is in the Battle as an attacker.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:hasDefender">Battle:hasDefender (army)</a></td> 
+        <td class="summary">Returns true if the army is in the Battle as an defender.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getArmyIds">Battle:getArmyIds ()</a></td> 
+        <td class="summary">Gets a list of attacker and defender army ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getNodePairIds">Battle:getNodePairIds ()</a></td> 
+        <td class="summary">Gets a tuple node pair ids</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Battle:getTerritoryId">Battle:getTerritoryId ()</a></td> 
+        <td class="summary">Gets the territory id.</td> 
+       </tr> 
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">   
+      <dt> 
+       <a name="Battle:getParticipantIds"></a> 
+       <strong>Battle:getParticipantIds ()</strong> 
+      </dt> 
+      <dd>
+        Get attackers and defenders in a single list of army ids 
+      </dd> 
+      <dt> 
+       <a name="Battle:getAttackingTeam"></a> 
+       <strong>Battle:getAttackingTeam ()</strong> 
+      </dt> 
+      <dd>
+        Gets the attacking GameTeam. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getAttackingTeamColor"></a> 
+       <strong>Battle:getAttackingTeamColor ()</strong> 
+      </dt> 
+      <dd>
+        Gets the attacking GameTeam's team color. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getDefendingTeam"></a> 
+       <strong>Battle:getDefendingTeam ()</strong> 
+      </dt> 
+      <dd>
+        Gets the defending GameTeam. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getDefendingTeamColor"></a> 
+       <strong>Battle:getDefendingTeamColor ()</strong> 
+      </dt> 
+      <dd>
+        Gets the defending GameTeam's team color. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getAttackers"></a> 
+       <strong>Battle:getAttackers ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list attacker army ids. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getDefenders"></a> 
+       <strong>Battle:getDefenders ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list defender army ids. 
+      </dd> 
+      <dt> 
+       <a name="Battle:hasAttacker"></a> 
+       <strong>Battle:hasAttacker (army)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the army is in the Battle as an attacker. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army</span> an Army </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Battle:hasDefender"></a> 
+       <strong>Battle:hasDefender (army)</strong> 
+      </dt> 
+      <dd>
+        Returns true if the army is in the Battle as an defender. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">army</span> an Army </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Battle:getArmyIds"></a> 
+       <strong>Battle:getArmyIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of attacker and defender army ids. 
+      </dd> 
+      <dt> 
+       <a name="Battle:getNodePairIds"></a> 
+       <strong>Battle:getNodePairIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a tuple node pair ids 
+       <h3>Returns:</h3> 
+       <ol>
+         (0, 0) if this is a territory battle, or a pair of node ids 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Battle:getTerritoryId"></a> 
+       <strong>Battle:getTerritoryId ()</strong> 
+      </dt> 
+      <dd>
+        Gets the territory id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if this is a field battle, or the territory id 
+       </ol> 
+      </dd> 
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

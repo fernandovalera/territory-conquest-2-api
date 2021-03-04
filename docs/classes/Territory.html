@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><strong>Territory</strong></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>Territory</code></h1> 
+     <p>An economic and production capable fixed capturable node.</p> 
+     <p></p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>  
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getTerritoriesForState">Territory:getTerritoriesForState (state_name)</a></td> 
+        <td class="summary">Class method: Get territories of a particular state</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getAllStates">Territory:getAllStates ()</a></td> 
+        <td class="summary">Class method: Get all states</td> 
+       </tr>                 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getAdjacentTerritoryIds">Territory:getAdjacentTerritoryIds ()</a></td> 
+        <td class="summary">Gets adjacent node ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getArmyIds">Territory:getArmyIds ()</a></td> 
+        <td class="summary">Gets a list of army ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getArmySize">Territory:getArmySize ()</a></td> 
+        <td class="summary">Gets total army size.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getBattleId">Territory:getBattleId ()</a></td> 
+        <td class="summary">Gets battle id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getCityIds">Territory:getCityIds ()</a></td> 
+        <td class="summary">Gets a list of the territory's city ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getHeight">Territory:getHeight ()</a></td> 
+        <td class="summary">Gets the physical height of the territory.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getGeneralIds">Territory:getGeneralIds (include_armies)</a></td> 
+        <td class="summary">Gets a list of general ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getIncomePerCapita">Territory:getIncomePerCapita ()</a></td> 
+        <td class="summary">Gets the income per capita.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getPopulation">Territory:getPopulation ()</a></td> 
+        <td class="summary">Gets the population of rural areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getStateName">Territory:getStateName ()</a></td> 
+        <td class="summary">Gets the state name.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getStructureIds">Territory:getStructureIds ()</a></td> 
+        <td class="summary">Gets a list of structure ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getSurfaceCFrame">Territory:getSurfaceCFrame ()</a></td> 
+        <td class="summary">Gets the surface cframe.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getSurfacePosition">Territory:getSurfacePosition ()</a></td> 
+        <td class="summary">Gets the surface position.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getTerritoryName">Territory:getTerritoryName ()</a></td> 
+        <td class="summary">Gets the territory's name.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getTotalPopulation">Territory:getTotalPopulation ()</a></td> 
+        <td class="summary">Gets the population of rural and urban areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getUrbanPopulation">Territory:getUrbanPopulation ()</a></td> 
+        <td class="summary">Gets the population of urban areas.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:isInBattle">Territory:isInBattle ()</a></td> 
+        <td class="summary">Returns true if in battle.</td> 
+       </tr>     
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getDevastation">Territory:getDevastation ()</a></td> 
+        <td class="summary">Gets the amount of devastation</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#Territory:getDevastationLevel">Territory:getDevastationLevel ()</a></td> 
+        <td class="summary">Returns an integer devastation level &gt;= 1</td> 
+       </tr> 
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">     
+      <dt> 
+       <a name="Territory:getTerritoriesForState"></a> 
+       <strong>Territory:getTerritoriesForState (state_name)</strong> 
+      </dt> 
+      <dd>
+        Class method: Get territories of a particular state 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">state_name</span> String name </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Territory:getAllStates"></a> 
+       <strong>Territory:getAllStates ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all states 
+      </dd>                                 
+      <dt> 
+       <a name="Territory:getAdjacentTerritoryIds"></a> 
+       <strong>Territory:getAdjacentTerritoryIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets adjacent node ids. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getArmyIds"></a> 
+       <strong>Territory:getArmyIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of army ids. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getArmySize"></a> 
+       <strong>Territory:getArmySize ()</strong> 
+      </dt> 
+      <dd>
+        Gets total army size. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getBattleId"></a> 
+       <strong>Territory:getBattleId ()</strong> 
+      </dt> 
+      <dd>
+        Gets battle id. 
+       <h3>Returns:</h3> 
+       <ol>
+         0 if not in battle, or a battle id 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="Territory:getCityIds"></a> 
+       <strong>Territory:getCityIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of the territory's city ids. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getHeight"></a> 
+       <strong>Territory:getHeight ()</strong> 
+      </dt> 
+      <dd>
+        Gets the physical height of the territory. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getGeneralIds"></a> 
+       <strong>Territory:getGeneralIds (include_armies)</strong> 
+      </dt> 
+      <dd>
+        Gets a list of general ids. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">include_armies</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="Territory:getIncomePerCapita"></a> 
+       <strong>Territory:getIncomePerCapita ()</strong> 
+      </dt> 
+      <dd>
+        Gets the income per capita. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getPopulation"></a> 
+       <strong>Territory:getPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of rural areas. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getStateName"></a> 
+       <strong>Territory:getStateName ()</strong> 
+      </dt> 
+      <dd>
+        Gets the state name. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getStructureIds"></a> 
+       <strong>Territory:getStructureIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of structure ids. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getSurfaceCFrame"></a> 
+       <strong>Territory:getSurfaceCFrame ()</strong> 
+      </dt> 
+      <dd>
+        Gets the surface cframe. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getSurfacePosition"></a> 
+       <strong>Territory:getSurfacePosition ()</strong> 
+      </dt> 
+      <dd>
+        Gets the surface position. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getTerritoryName"></a> 
+       <strong>Territory:getTerritoryName ()</strong> 
+      </dt> 
+      <dd>
+        Gets the territory's name. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getTotalPopulation"></a> 
+       <strong>Territory:getTotalPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of rural and urban areas. 
+      </dd> 
+      <dt> 
+       <a name="Territory:getUrbanPopulation"></a> 
+       <strong>Territory:getUrbanPopulation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the population of urban areas. 
+      </dd> 
+      <dt> 
+       <a name="Territory:isInBattle"></a> 
+       <strong>Territory:isInBattle ()</strong> 
+      </dt> 
+      <dd>
+        Returns true if in battle. 
+      </dd>         
+      <dt> 
+       <a name="Territory:getDevastation"></a> 
+       <strong>Territory:getDevastation ()</strong> 
+      </dt> 
+      <dd>
+        Gets the amount of devastation 
+      </dd> 
+      <dt> 
+       <a name="Territory:getDevastationLevel"></a> 
+       <strong>Territory:getDevastationLevel ()</strong> 
+      </dt> 
+      <dd>
+        Returns an integer devastation level &gt;= 1 
+      </dd> 
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><a href="../classes/GameTeam.html">GameTeam</a></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><strong>GlobalDataObject</strong></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>GlobalDataObject</code></h1> 
+     <p>Base class for objects that are tracked in a global data store.</p> 
+     <p> </p>
+     <p> The data store is structured as follows: </p>
+     <p> ClassGroups = { class_group_1 = { 0 = 
+      <object_1>
+        1 = 
+       <object_2>
+         ... n = 
+        <object_n>
+          }, class_group_2 = { ... }, 
+        </object_n>
+       </object_2>
+      </object_1></p>
+     <p> ... </p>
+     <p> class_group_n = { 0 = 
+      <object_1>
+        1 = 
+       <object_2>
+         ... m = 
+        <object_n>
+          }, } 
+        </object_n>
+       </object_2>
+      </object_1></p>
+     <p> ClassGroupsSize = { class_group_1 = x class_group_2 = y ... class_group_n = z } </p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody>       
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getCount">GlobalDataObject:getCount ()</a></td> 
+        <td class="summary">Class method: Get count of all objects of a class group.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getById">GlobalDataObject:getById (id)</a></td> 
+        <td class="summary">Class method: Get an object by its id.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getAll">GlobalDataObject:getAll ()</a></td> 
+        <td class="summary">Class method: Get all objects of a class group</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getAllCopy">GlobalDataObject:getAllCopy ()</a></td> 
+        <td class="summary">Class method: Get a copy of all objects of a class group</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getAllData">GlobalDataObject:getAllData ()</a></td> 
+        <td class="summary">Class method: Get all data of all objects of a particular class group</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getRandom">GlobalDataObject:getRandom ()</a></td> 
+        <td class="summary">Class method: Get random object.</td> 
+       </tr>   
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getData">GlobalDataObject:getData ()</a></td> 
+        <td class="summary">Return a copy of data unlinked to this instance Listeners are not copied.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GlobalDataObject:getId">GlobalDataObject:getId ()</a></td> 
+        <td class="summary">Get the id of an object</td> 
+       </tr>  
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">               
+      <dt> 
+       <a name="GlobalDataObject:getCount"></a> 
+       <strong>GlobalDataObject:getCount ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get count of all objects of a class group. 
+       <h3>Returns:</h3> 
+       <ol>
+         the count of all objects of a class group 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getById"></a> 
+       <strong>GlobalDataObject:getById (id)</strong> 
+      </dt> 
+      <dd>
+        Class method: Get an object by its id. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">id</span> the id of the object to search for </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         the object if it is found, or nil 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getAll"></a> 
+       <strong>GlobalDataObject:getAll ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all objects of a class group 
+       <h3>Returns:</h3> 
+       <ol>
+         a dictionary of objects of a class group 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getAllCopy"></a> 
+       <strong>GlobalDataObject:getAllCopy ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get a copy of all objects of a class group 
+       <h3>Returns:</h3> 
+       <ol>
+         a dictionary of a copy of objects of a class group 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getAllData"></a> 
+       <strong>GlobalDataObject:getAllData ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get all data of all objects of a particular class group 
+       <h3>Returns:</h3> 
+       <ol>
+         a dictionary of the data fields of objects of a class group 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getRandom"></a> 
+       <strong>GlobalDataObject:getRandom ()</strong> 
+      </dt> 
+      <dd>
+        Class method: Get random object. 
+      </dd>     
+      <dt> 
+       <a name="GlobalDataObject:getData"></a> 
+       <strong>GlobalDataObject:getData ()</strong> 
+      </dt> 
+      <dd>
+        Return a copy of data unlinked to this instance Listeners are not copied. 
+      </dd> 
+      <dt> 
+       <a name="GlobalDataObject:getId"></a> 
+       <strong>GlobalDataObject:getId ()</strong> 
+      </dt> 
+      <dd>
+        Get the id of an object 
+      </dd>   
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>

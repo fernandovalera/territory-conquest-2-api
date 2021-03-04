@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>Reference</title> 
+  <link rel="stylesheet" href="../ldoc.css" type="text/css"> 
+ </head> 
+ <body> 
+  <div id="container"> 
+   <div id="product"> 
+    <div id="product_logo"></div> 
+    <div id="product_name">
+     <big><b></b></big>
+    </div> 
+    <div id="product_description"></div> 
+   </div> 
+   <!-- id="product" --> 
+   <div id="main"> 
+    <!-- Menu --> 
+    <div id="navigation"> 
+     <br> 
+     <h1>ldoc</h1> 
+     <ul> 
+      <li><a href="../index.html">Index</a></li> 
+     </ul> 
+     <h2>Contents</h2> 
+     <ul> 
+      <li><a href="#Methods">Methods</a></li> 
+     </ul> 
+     <h2>Classes</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'"> 
+      <li><a href="../classes/ClientRequestSender.html">ClientRequestSender</a></li> 
+      <li><a href="../classes/Army.html">Army</a></li> 
+      <li><a href="../classes/Battle.html">Battle</a></li> 
+      <li><a href="../classes/City.html">City</a></li> 
+      <li><strong>GameTeam</strong></li> 
+      <li><a href="../classes/General.html">General</a></li> 
+      <li><a href="../classes/GameObject.html">GameObject</a></li> 
+      <li><a href="../classes/GlobalDataObject.html">GlobalDataObject</a></li> 
+      <li><a href="../classes/TeamGameObject.html">TeamGameObject</a></li> 
+      <li><a href="../classes/Structure.html">Structure</a></li> 
+      <li><a href="../classes/Territory.html">Territory</a></li> 
+     </ul> 
+     <h2>Modules</h2> 
+     <ul class="$(kind=='Topics' and '' or 'nowrap'">                                                                                                                                                          
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <h1>Class <code>GameTeam</code></h1> 
+     <p>Container for team information and Players</p> 
+     <p></p> 
+     <h2><a href="#Methods">Methods</a></h2> 
+     <table class="function_list"> 
+      <tbody> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:findByPlayer">GameTeam:findByPlayer (player)</a></td> 
+        <td class="summary">Class method: Find GameTeam by Roblox player.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:findByTeamColor">GameTeam:findByTeamColor (team_color)</a></td> 
+        <td class="summary">Class method: Find GameTeam by string team color</td> 
+       </tr>   
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getPlayers">GameTeam:getPlayers ()</a></td> 
+        <td class="summary">Gets players.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getTeamColor">GameTeam:getTeamColor ()</a></td> 
+        <td class="summary">Gets the team color as a string.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getTeamColor3">GameTeam:getTeamColor3 ()</a></td> 
+        <td class="summary">Gets the team color as a Color3.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getTerritoryIds">GameTeam:getTerritoryIds ()</a></td> 
+        <td class="summary">Gets a list of owned Territory ids.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getTerritoryCount">GameTeam:getTerritoryCount ()</a></td> 
+        <td class="summary">Gets the number of owned Territories.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getEndWarRequestWithTeam">GameTeam:getEndWarRequestWithTeam (other_team)</a></td> 
+        <td class="summary">Returns the minimum duration specified for this alliance request, or nil.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:isFriendlyWith">GameTeam:isFriendlyWith (other_object)</a></td> 
+        <td class="summary">Returns true if this GameTeam is friendly with another TeamGameObject.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:isFriendlyWithTeam">GameTeam:isFriendlyWithTeam (other_team)</a></td> 
+        <td class="summary">Returns true if this GameTeam is friendly with another GameTeam.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:getAtForcedPeaceWithTeams">GameTeam:getAtForcedPeaceWithTeams ()</a></td> 
+        <td class="summary">Get list of teams that are at force peaced with other teams.</td> 
+       </tr> 
+       <tr> 
+        <td class="name" nowrap><a href="#GameTeam:isAtForcedPeaceWithTeam">GameTeam:isAtForcedPeaceWithTeam (other_team)</a></td> 
+        <td class="summary">Returns true if this team is at forced peace with the other team.</td> 
+       </tr>     
+      </tbody>
+     </table> 
+     <br> 
+     <br> 
+     <h2><a name="Methods"></a>Methods</h2> 
+     <dl class="function">   
+      <dt> 
+       <a name="GameTeam:findByPlayer"></a> 
+       <strong>GameTeam:findByPlayer (player)</strong> 
+      </dt> 
+      <dd>
+        Class method: Find GameTeam by Roblox player. If player is in the player to team cache, return cached value. Otherwise, iterate trough all teams to find team with player. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">player</span> the Roblox player </li> 
+       </ul> 
+       <h3>Returns:</h3> 
+       <ol>
+         a GameTeam object or nil 
+       </ol> 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:findByTeamColor"></a> 
+       <strong>GameTeam:findByTeamColor (team_color)</strong> 
+      </dt> 
+      <dd>
+        Class method: Find GameTeam by string team color 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">team_color</span> </li> 
+       </ul> 
+      </dd>     
+      <dt> 
+       <a name="GameTeam:getPlayers"></a> 
+       <strong>GameTeam:getPlayers ()</strong> 
+      </dt> 
+      <dd>
+        Gets players. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getTeamColor"></a> 
+       <strong>GameTeam:getTeamColor ()</strong> 
+      </dt> 
+      <dd>
+        Gets the team color as a string. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getTeamColor3"></a> 
+       <strong>GameTeam:getTeamColor3 ()</strong> 
+      </dt> 
+      <dd>
+        Gets the team color as a Color3. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getTerritoryIds"></a> 
+       <strong>GameTeam:getTerritoryIds ()</strong> 
+      </dt> 
+      <dd>
+        Gets a list of owned Territory ids. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getTerritoryCount"></a> 
+       <strong>GameTeam:getTerritoryCount ()</strong> 
+      </dt> 
+      <dd>
+        Gets the number of owned Territories. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getEndWarRequestWithTeam"></a> 
+       <strong>GameTeam:getEndWarRequestWithTeam (other_team)</strong> 
+      </dt> 
+      <dd>
+        Returns the minimum duration specified for this alliance request, or nil. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">other_team</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:isFriendlyWith"></a> 
+       <strong>GameTeam:isFriendlyWith (other_object)</strong> 
+      </dt> 
+      <dd>
+        Returns true if this GameTeam is friendly with another TeamGameObject. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">other_object</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:isFriendlyWithTeam"></a> 
+       <strong>GameTeam:isFriendlyWithTeam (other_team)</strong> 
+      </dt> 
+      <dd>
+        Returns true if this GameTeam is friendly with another GameTeam. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">other_team</span> </li> 
+       </ul> 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:getAtForcedPeaceWithTeams"></a> 
+       <strong>GameTeam:getAtForcedPeaceWithTeams ()</strong> 
+      </dt> 
+      <dd>
+        Get list of teams that are at force peaced with other teams. After a war is ended, a minimum time may be set before these teams may go to war with each other. It can be seen as a peace agreement that cannot be broken. 
+      </dd> 
+      <dt> 
+       <a name="GameTeam:isAtForcedPeaceWithTeam"></a> 
+       <strong>GameTeam:isAtForcedPeaceWithTeam (other_team)</strong> 
+      </dt> 
+      <dd>
+        Returns true if this team is at forced peace with the other team. 
+       <h3>Parameters:</h3> 
+       <ul> 
+        <li><span class="parameter">other_team</span> </li> 
+       </ul> 
+      </dd>         
+     </dl> 
+    </div> 
+    <!-- id="content" --> 
+   </div> 
+   <!-- id="main" --> 
+   <div id="about"> 
+    <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i> 
+    <i style="float:right;">Last updated 2021-03-05 01:27:04 </i> 
+   </div> 
+   <!-- id="about" --> 
+  </div> 
+  <!-- id="container" -->  
+ </body>
+</html>
